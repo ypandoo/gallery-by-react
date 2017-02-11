@@ -1,0 +1,59 @@
+html, body{
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+}
+
+
+.content{
+  width: 100%;
+  height: 100%;
+}
+
+.stage{
+  position: relative;
+  width: 100%;
+  height: 680px;
+}
+
+.img-sec{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #7d3838;
+  overflow: hidden;
+
+  @at-root{
+    .img-figure{
+      width: 320px;
+      height: 360px;
+      padding: 40px;
+      box-sizing: border-box;
+      background-color: #FFF;
+      position: absolute;;
+      margin: 0;
+
+      img{
+        width: 240px;
+        height: 240px;
+      }
+    }
+
+    figcaption{
+      text-align: center;
+      .img-title{
+        margin: 20px 0 0  0;
+        font-size: 16px;
+        color: #a7a7a7
+      }
+    }
+  }
+}
+
+.controller-nav{
+  position: absolute;
+  bottom: 30px;
+  z-index: 101;
+  text-align: center;
+  left: 0;
+}
